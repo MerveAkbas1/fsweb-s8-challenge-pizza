@@ -1,21 +1,323 @@
 .home-button {
   background-color: #FDC913;
 }
-.navbar {
-  background-color: #CE2829;
-}
+
 .anasayfa {
   color: white;
 }
-.ek div {
+/* Navbar Genel Stil */
+.navbar {
+  background-color: #CE2829;
+  ; /* Arka plan rengi kırmızı */
+  padding: 20px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+}
+
+/* Navbar içeriği */
+.head {
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Logo */
+.logo img {
+  height: 50px;
+}
+
+/* Anasayfa Metni */
+.anasayfa {
+  font-size: 14px;
+  color: white;
+  margin-left: 20px;
+  font-family: "Barlow", sans-serif;
+  font-weight: normal;
+  text-align: left;
+}
+
+/* Ana başlık (Teknolojik Yemekler) */
+.head h1 {
+  color: white;
+  font-size: 24px;
+  font-weight: bold;
+  text-align: center;
+}
+
+/* Genel ayarlar */
+.container {
+  width: 80%;
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: white;
+  font-family: "Barlow", sans-serif;
+}
+
+/* Başlık */
+.position {
+  font-size: 24px;
+  font-weight: bold;
+  color:#292929;
+  margin-bottom: 10px;
+  text-align: left;
+}
+.degerlendirmek{
+  display: flex;
+  
+}
+.degerlendirme{
+  display: flex;
+  align-items: flex-end;
+  margin-left: 300px;
+}
+.puan {
+  margin-left: 100px;
+}
+
+.fiyat {
+  font-size: 20px;
+  color: black;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 15px;
+  text-align: left;
+}
+
+.text {
+  font-size: 14px;
+  line-height: 1.5;
+  margin: 15px 0;
+  color: #5F5F5F;
+  text-align: justify;
+}
+.secim {
+  font-family: Arial, sans-serif;
+}
+
+h3 {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.required {
+  color: red;
+}
+
+.radio-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.radio-group label {
+  display: flex;
+  align-items: center;
+  margin-bottom: 8px;
+  font-size: 16px;
+}
+
+.radio-group input[type="radio"] {
+  margin-right: 8px;
+  transform: scale(1.2); /* Radio butonlarının boyutunu büyütmek için */
+}
+
+/* Boyut ve Hamur Seçimi */
+.byt, .hmr {
+  margin-bottom: 20px;
+}
+.black-text {
+  color: black;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.red-text {
+  color: red;
+}
+
+.sec{
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+
+.boyutSecim, .hmrSecim {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 5px;
+  flex-direction: column;
+}
+
+input[type="radio"] {
+  margin-right: 10px;
+  margin-bottom: 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+select {
+  padding: 5px;
+  width: 100%;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 14px;
+}
+
+/* Ek Malzemeler */
+.ek {
   display:flex ;
   justify-content: space-between;
+  flex-direction: column;
 }
-.fiyat {
-  font-size: xx-large;
+.ekmalzeme{
+  font-weight: bold;
+  color: black;
+  font-size: 25px;
+}
+.uyarı{
+  margin-bottom: 50px;
+}
+.checkbox-container {
+  display: grid;
+  grid-template-columns: repeat(3, 5fr);
+  gap: 15px;
+  color: #5F5F5F;
   font-weight: bold;
 }
-.butonlar button {
-  background-color: #FDC913;
+.checkbox-container label {
+  display: flex;
+  align-items: center;
+  font-size: 16px;
+}
 
+.checkbox-container input[type="checkbox"] {
+  margin-right: 8px;
+  transform: scale(1.2);
+}
+
+/* Sipariş Notu */
+.siparisNotu {
+  margin-bottom: 20px;
+  margin-top: 40px;
+  color: black;
+  font-size: 30px;
+}
+
+.siparisNotuBaslik {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.not {
+  width: 100%;
+  height: 80px;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 14px;
+  resize: none;
+}
+
+/* Miktar ve Butonlar */
+.buttonlar {
+  display: flex;
+  align-items: center;
+  justify-content: left;
+  margin-bottom: 20px;
+}
+
+.eksiButton, .artiButton {
+  background-color: #FDC913;
+  color: #fff;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  border-radius: 4px;
+  font-size: 18px;
+}
+
+.eksiButton:hover, .artiButton:hover {
+  background-color: #FDC913;
+}
+
+.miktar {
+  margin: 0 15px;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+/* Sipariş Toplamı */
+.total-price {
+  background-color: #f8f8f8;
+  padding: 15px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  text-align: center;
+  font-size: 16px;
+  justify-content: right;
+}
+.toplamsiparis{
+  font-size: 25px;
+  color: black;
+  font-weight: bold;
+}
+.secimler{
+  color:#292929;
+  font-weight: bold;
+}
+.toplam{
+  color:#CE2829;
+  font-weight: bold;
+}
+
+.total-price p {
+  margin: 5px 0;
+}
+
+/* Sipariş Ver Butonu */
+.siparisVer {
+  width: 100%;
+  background-color: #FFB800;
+  color:#292929;
+  padding: 15px;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: bold;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+}
+
+.siparisVer:hover {
+  background-color: #FF9900;
+}
+.finish {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #d32f2f; /* Kırmızı arka plan rengi */
+  color: white;
+  font-family: Arial, sans-serif;
+  text-align: center;
+}
+
+.logo h1 {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.son p {
+  font-size: 36px;
+  line-height: 1.5;
+  font-weight: 300;
 }
